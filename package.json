@@ -1,0 +1,35 @@
+{
+  "name": "smash-dasher",
+  "version": "1.0.0",
+  "description": "Help you find a character to play",
+  "main": "humble-beginnings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./BackEnd/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nuckaahf/Smash-Dasher.git"
+  },
+  "keywords": [
+    "Smash"
+  ],
+  "author": "Nakami Hope-Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nuckaahf/Smash-Dasher/issues"
+  },
+  "homepage": "https://github.com/Nuckaahf/Smash-Dasher#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "redux": "^4.1.0",
+    "webpack": "^5.36.2"
+  }
+}
