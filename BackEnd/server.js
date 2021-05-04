@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
     return res.status(200).sendFile(__dirname, '../FrontEnd/index.html')
 });
 
-app.listen(3000);
+app.listen(3000); //Listening on port 3000

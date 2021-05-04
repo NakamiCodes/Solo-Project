@@ -1,3 +1,4 @@
+const historyApiFallback = require('connect-history-api-fallback');
 const path = require('path');
 
 
@@ -13,14 +14,20 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader'],
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env', '@babel/preset-react']
+                    }
+                }
             },
         ],
     },
     plugins: [],
     devServer: {
         proxy: {
-            '/' : 'http://localhoest:3000'
+            '/' : 'http://localhoest:3000',
+            historyApiFallback: true
         },
         hot: true
     }
