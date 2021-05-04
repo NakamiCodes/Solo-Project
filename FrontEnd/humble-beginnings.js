@@ -1,3 +1,3 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from 
+import App from './Components/App.js'
