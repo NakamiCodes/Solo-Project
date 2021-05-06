@@ -5,7 +5,9 @@
   "main": "humble-beginnings.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=production nodemon ./BackEnd/server.js"
+    "build": "webpack",
+    "start": "cross-env NODE_ENV=development concurrently \"webpack serve --open\" \"nodemon BackEnd/server.js\"",
+    "dev": "cross-env NODE_ENV=development "
   },
   "repository": {
     "type": "git",
@@ -30,14 +32,18 @@
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
     "express": "^4.17.1",
-    "node": "^16.0.0",
+    "fs": "^0.0.1-security",
     "nodemon": "^2.0.7",
     "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
     "redux": "^4.1.0",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "path-browserify": "^1.0.1"
   }
 }
